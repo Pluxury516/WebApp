@@ -1,0 +1,99 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      href="https://cdn.muicss.com/mui-latest/css/mui.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.muicss.com/mui-latest/js/mui.min.js"></script>
+    <title>Question</title>
+  </head>
+  <body>
+    <header id="header">
+      <button
+        class="mui-btn mui-btn--fab mui-btn--primary my-button"
+        id="modal-btn"
+      >
+        Войти
+      </button>
+      <div class="mui-appbar mui--appbar-line-height">
+        <div class="mui-container-fluid">
+          <a
+            class="
+              sidedrawer-toggle
+              mui--visible-xs-inline-block mui--visible-sm-inline-block
+              js-show-sidedrawer
+            "
+            >☰</a
+          >
+          <a
+            class="
+              sidedrawer-toggle
+              mui--hidden-xs mui--hidden-sm
+              js-hide-sidedrawer
+            "
+            >☰</a
+          >
+          <span
+            class="
+              mui--text-title
+              mui--visible-xs-inline-block
+              mui--visible-sm-inline-block
+            "
+            >Brand.io</span
+          >
+        </div>
+      </div>
+    </header>
+    <!-- main content -->
+    <div iv id="content" class="mui-container-fluid">
+      <div class="mui-row">
+        <div class="mui-col-sm-10 mui-col-sm-offset-1">
+          <br />
+          <br />
+          <div class="mui--text-black-54 mui--text-body2">Задай вопрос</div>
+          <div class="mui-divider"></div>
+          <br />
+          <br />
+          <form class="mui-form" id="form">
+            <div class="mui-textfield mui-textfield--float-label">
+              <input
+                type="text"
+                id="question-input"
+                required
+                minlength="10"
+                maxlength="256"
+              />
+              <label for="question-input">Ваш вопрос</label>
+            </div>
+            <button
+              type="submit"
+              class="mui-btn mui-btn--raised mui-btn--primary"
+              id="submit"
+              disabled
+            >
+              Задать вопрос
+            </button>
+          </form>
+          <br />
+          <div class="mui--text-black-54 mui--text-body2">
+            Вы уже спрашивали
+          </div>
+          <div class="mui-divider"></div>
+          <br />
+          <div id="list"></div>
+          <br />
+        </div>
+      </div>
+    </div>
+    <!--<footer id="footer">
+      <div class="mui-container-fluid">
+        <br />
+        Made with ♥ by <a href="https://www.muicss.com">MUI</a>
+      </div>
+    </footer>-->
+  </body>
+</html>
